@@ -2,6 +2,7 @@ name: ci
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 jobs:
@@ -14,7 +15,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             cmake ninja-build g++ \
-            libopencv-dev libeigen3-dev libpcl-dev libomp-dev
+            libopencv-dev libeigen3-dev libpcl-dev libomp-dev libopenmpi-dev
       - name: Configure
         run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
       - name: Build
