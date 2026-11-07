@@ -1,0 +1,25 @@
+# Build output
+/build/
+/build_*/
+/out/
+/*.log
+
+# Local dependencies / package managers
+/_deps/
+/third_party/
+/vcpkg/
+/CMakeUserPresets.json
+
+# IDE
+/.vs/
+/.vscode/
+*.user
+
+# Results (keep the directory)
+/results/*
+!/results/.gitkeep
+/results_*/
+/results_depth/
+
+# Full KITTI datasets are not committed; only the small sample fixture is.
+/data/kitti/

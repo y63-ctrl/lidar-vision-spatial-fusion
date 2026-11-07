@@ -1,0 +1,3 @@
+# results
+
+运行 `lidar_fusion` 后，输出会写到这里。目录本身保留在仓库中，生成物被 `.gitignore` 忽略。
